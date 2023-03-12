@@ -3,7 +3,6 @@ const { readFromFile, writeToFile, readAndAppend } = require('../helpers/utils')
 const fs = require('fs');
 const uniq = require('uniqid')
 
-// GET Route for notes page
 app.get(`/notes`, (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 });

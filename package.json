@@ -9,7 +9,8 @@
   "author": "Anthony Walker",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "uniqid": "^5.4.0"
   },
   "repository": {
     "type": "git",

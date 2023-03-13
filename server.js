@@ -7,6 +7,6 @@ const PORT = process.env.PORT || 3001
 app.use(express.static(`public`))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-app.use(`/routes`, notes)
+app.use(`/api`, notes)
 app.get(`/notes`,(req,res)=>res.sendFile(path.join(__dirname, `./public/notes.html`)))
-app.listen(PORT,()=>console.log(`App listening at http://localhost:${PORT}`))
+app.listen(PORT,()=>console.log(`App listening at http://localhost:`+PORT))
